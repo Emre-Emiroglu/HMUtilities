@@ -1,5 +1,5 @@
 # HMUtilities
-HMProDebug is a ...
+HMUtilities is a ...
 
 ## Features
 
