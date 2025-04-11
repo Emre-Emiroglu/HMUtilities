@@ -4,9 +4,19 @@ using UnityEngine;
 
 namespace CodeCatGames.HMUtilities.Runtime
 {
+    /// <summary>
+    /// Provides various runtime utility methods for game logic.
+    /// </summary>
     public static class RuntimeUtilities
     {
         #region Executes
+        /// <summary>
+        /// Fades the alpha value of a CanvasGroup over a specified duration.
+        /// </summary>
+        /// <param name="canvasGroup">The CanvasGroup to modify.</param>
+        /// <param name="targetValue">The target alpha value.</param>
+        /// <param name="duration">The duration of the fade.</param>
+        /// <returns>An IEnumerator for use in a coroutine.</returns>
         public static IEnumerator SetCanvasGroupAlpha(CanvasGroup canvasGroup, float targetValue, float duration = 1f)
         {
             float t = 0f;
@@ -21,23 +31,12 @@ namespace CodeCatGames.HMUtilities.Runtime
                 yield return null;
             }
         }
-        public static Vector3 WorldToScreenPointForUICamera(Vector3 worldPos, Camera gameCamera, Canvas screenCanvas)
-        {
-            Vector3 canvasPos;
-            Vector3 screenPos = gameCamera.WorldToScreenPoint(worldPos);
-
-            if (screenCanvas.renderMode == RenderMode.ScreenSpaceOverlay)
-                canvasPos = screenPos;
-            else
-            {
-                RectTransformUtility.ScreenPointToLocalPointInRectangle(screenCanvas.transform as RectTransform,
-                    screenPos, screenCanvas.worldCamera, out var posRect2D);
-                
-                canvasPos = screenCanvas.transform.TransformPoint(posRect2D);
-            }
-
-            return canvasPos;
-        }
+        
+        /// <summary>
+        /// Shuffles a list of items randomly.
+        /// </summary>
+        /// <param name="ts">The list to shuffle.</param>
+        /// <returns>A new list with the shuffled items.</returns>
         public static List<T> Shuffle<T>(List<T> ts)
         {
             List<T> newList = ts;
@@ -50,6 +49,12 @@ namespace CodeCatGames.HMUtilities.Runtime
             }
             return newList;
         }
+        
+        /// <summary>
+        /// Sorts a list of integers using the bubble sort algorithm.
+        /// </summary>
+        /// <param name="ts">The list of integers to sort.</param>
+        /// <returns>A sorted list of integers.</returns>
         public static IList<int> BubbleSort(IList<int> ts)
         {
             IList<int> newList = ts;
@@ -61,7 +66,6 @@ namespace CodeCatGames.HMUtilities.Runtime
             
             return newList;
         }
-        public static Matrix4x4 IsoMatrix(Quaternion rotate) => Matrix4x4.Rotate(rotate);
         #endregion
     }
 }

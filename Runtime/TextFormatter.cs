@@ -2,6 +2,9 @@
 
 namespace CodeCatGames.HMUtilities.Runtime
 {
+    /// <summary>
+    /// Provides utility methods for formatting numbers and time durations.
+    /// </summary>
     public static class TextFormatter
     {
         #region Constants
@@ -13,15 +16,30 @@ namespace CodeCatGames.HMUtilities.Runtime
         #endregion
 
         #region Executes
+        /// <summary>
+        /// Formats a number into a more readable format (e.g., 1M for 1,000,000).
+        /// </summary>
+        /// <param name="num">The number to format.</param>
+        /// <returns>A string representing the formatted number.</returns>
         public static string FormatNumber(int num) =>
             num switch
             {
-                >= 100000000 => (num / 1000000D).ToString("0.#M"),
-                >= 1000000 => (num / 1000000D).ToString("0.##M"),
-                >= 100000 => (num / 1000D).ToString("0.#k"),
-                >= 10000 => (num / 1000D).ToString("0.##k"),
-                _ => num.ToString("#,0")
+                >= 1_000_000_000 => (num / 1_000_000_000D).ToString("0.#B"),
+                >= 100_000_000 => (num / 1_000_000D).ToString("0.#M"),
+                >= 1_000_000 => (num / 1_000_000D).ToString("0.##M"),
+                >= 100_000 => (num / 1_000D).ToString("0.#k"),
+                >= 10_000 => (num / 1_000D).ToString("0.##k"),
+                >= 1_000 => (num / 1_000D).ToString("0.#k"),
+                _ => num.ToString()
             };
+        
+        /// <summary>
+        /// Formats a time duration in seconds into a human-readable string.
+        /// </summary>
+        /// <param name="totalSecond">The total time in seconds.</param>
+        /// <param name="timeFormattingType">The formatting style (days, hours, minutes, seconds).</param>
+        /// <param name="withMilliSeconds">Indicates whether to include milliseconds.</param>
+        /// <returns>A string representing the formatted time duration.</returns>
         public static string FormatTime(double totalSecond,
             TimeFormattingTypes timeFormattingType = TimeFormattingTypes.DaysHoursMinutesSeconds,
             bool withMilliSeconds = false)

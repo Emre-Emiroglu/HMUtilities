@@ -2,6 +2,9 @@
 
 namespace CodeCatGames.HMUtilities.Runtime
 {
+    /// <summary>
+    /// Displays the current frames per second (FPS) on the screen.
+    /// </summary>
     public sealed class FpsDisplay : MonoBehaviour
     {
         #region Fields
