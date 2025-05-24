@@ -4,7 +4,7 @@
   "displayName": "HMUtilities",
   "description": "HMUtilities package includes utility tools commonly used in Unity projects. It offers functions like transform manipulations, time calculations, list sorting, alpha animations, and tag creation in the editor. Designed to speed up tasks in your projects.",
   "author": {
-    "name": "Emre Emiroglu",
+    "name": "Code Cat Games",
     "email": "emirogluemre08@gmail.com",
     "url": "https://github.com/Emre-Emiroglu"
   },
