@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CodeCatGames.HMUtilities.Runtime
+namespace HMUtilities.Runtime
 {
     /// <summary>
     /// Displays the current frames per second (FPS) on the screen.

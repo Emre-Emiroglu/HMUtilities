@@ -1,4 +1,4 @@
-﻿namespace CodeCatGames.HMUtilities.Runtime
+﻿namespace HMUtilities.Runtime
 {
     public enum TimeFormattingTypes
     {

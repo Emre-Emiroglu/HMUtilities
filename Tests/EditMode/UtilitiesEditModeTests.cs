@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using CodeCatGames.HMUtilities.Runtime;
+using HMUtilities.Runtime;
 using NUnit.Framework;
 
-namespace CodeCatGames.HMUtilities.Tests.EditMode
+namespace HMUtilities.Tests.EditMode
 {
     public sealed class UtilitiesEditModeTests
     {

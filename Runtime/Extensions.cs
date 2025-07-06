@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CodeCatGames.HMUtilities.Runtime
+namespace HMUtilities.Runtime
 {
     /// <summary>
     /// Extension methods for transforming the position and rotation of a Transform.

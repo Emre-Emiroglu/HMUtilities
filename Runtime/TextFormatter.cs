@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CodeCatGames.HMUtilities.Runtime
+namespace HMUtilities.Runtime
 {
     /// <summary>
     /// Provides utility methods for formatting numbers and time durations.

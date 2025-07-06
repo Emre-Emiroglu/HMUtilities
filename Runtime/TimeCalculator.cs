@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CodeCatGames.HMUtilities.Runtime
+namespace HMUtilities.Runtime
 {
     /// <summary>
     /// Provides utility methods for timing and calculating durations.

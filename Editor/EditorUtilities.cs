@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace CodeCatGames.HMUtilities.Editor
+namespace HMUtilities.Editor
 {
     /// <summary>
     /// A utility class that provides editor-related functionality.

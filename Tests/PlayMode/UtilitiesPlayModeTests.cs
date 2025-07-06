@@ -1,10 +1,10 @@
 ﻿using System.Collections;
-using CodeCatGames.HMUtilities.Runtime;
+using HMUtilities.Runtime;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace CodeCatGames.HMUtilities.Tests.PlayMode
+namespace HMUtilities.Tests.PlayMode
 {
     public sealed class UtilitiesPlayModeTests
     {

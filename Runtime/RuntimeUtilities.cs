@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CodeCatGames.HMUtilities.Runtime
+namespace HMUtilities.Runtime
 {
     /// <summary>
     /// Provides various runtime utility methods for game logic.

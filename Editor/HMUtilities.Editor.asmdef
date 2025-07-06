@@ -1,6 +1,6 @@
 {
-    "name": "CodeCatGames.HMUtilities.Editor",
-    "rootNamespace": "CodeCatGames.HMUtilities.Editor",
+    "name": "HMUtilities.Editor",
+    "rootNamespace": "HMUtilities.Editor",
     "references": [
         "GUID:041b19db3e061a8428b32b4169b71274"
     ],

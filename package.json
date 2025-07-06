@@ -1,10 +1,10 @@
 {
-  "name": "com.codecatgames.hmutilities",
+  "name": "com.emreemiroglu.hmutilities",
   "version": "1.0.1",
   "displayName": "HMUtilities",
-  "description": "HMUtilities package includes utility tools commonly used in Unity projects. It offers functions like transform manipulations, time calculations, list sorting, alpha animations, and tag creation in the editor. Designed to speed up tasks in your projects.",
+  "description": "HMUtilities package includes utility tools commonly used in Unity projects. Designed to speed up tasks in your projects.",
   "author": {
-    "name": "Code Cat Games",
+    "name": "Emre Emiroglu",
     "email": "emirogluemre08@gmail.com",
     "url": "https://github.com/Emre-Emiroglu"
   },

@@ -1,3 +1,5 @@
+<img src="icon.jpg" width="512" height="512" alt="HMUtilities Logo">
+
 # HMUtilities
 HMUtilities is a utility package designed to streamline common tasks in Unity projects. It offers various helper functions for tasks like transforming objects, calculating time, animating canvas groups, sorting lists, and more. This package is aimed at making Unity development faster and easier by providing essential tools right out of the box.
 
@@ -8,7 +10,7 @@ HMUtilities offers the following capabilities:
 * Canvas Group Animation: Smoothly animate the alpha of a CanvasGroup over time.
 * List Utilities: Functions for shuffling and sorting lists.
 * Time Calculation: Tools to measure elapsed time during development.
-* Editor Tools: Easily create new tags in the Unity editor.
+* Editor Tools: Create new tags in the Unity editor.
 
 ## Getting Started
 Install via UPM with git URL

@@ -1,6 +1,6 @@
 {
-    "name": "CodeCatGames.HMUtilities.Runtime",
-    "rootNamespace": "CodeCatGames.HMUtilities.Runtime",
+    "name": "HMUtilities.Runtime",
+    "rootNamespace": "HMUtilities.Runtime",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
